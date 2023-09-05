@@ -75,9 +75,11 @@ let pessoa = {
     idade: 19,
     generomusical: "Rock instrumental"
 };
-function lerpessoa(novopessoa){
-let novopessoa = {...pessoa} 
-novopessoa.comida = ["pavê", "sagu", "torta de bolacha"] 
+function lerpessoa(){
+let novopessoa = {...pessoa};
+novopessoa.comida = ["pavê", "sagu", "torta de bolacha"];
 novopessoa.amigo = {nome: "Gerson", idade: 18};
-return console.log(`O nome da pessoa é ${pessoa.nome} e suas comidas preferidas são ${novopessoa.comida[0]}, ${novopessoa.comida[1]} e ${novopessoa.comida[2]}. Seu melhor amigo se chama ${pessoa.amigo.nome} e tem ${pessoa.amigo.idade}.`)};
+
+return console.log(`O nome da pessoa é ${novopessoa.nome} e suas comidas preferidas são ${novopessoa.comida[0]}, ${novopessoa.comida[1]} e ${novopessoa.comida[2]}. Seu melhor amigo se chama ${novopessoa.amigo.nome} e tem ${novopessoa.amigo.idade}.`)
+};
 console.log(lerpessoa());
